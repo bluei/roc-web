@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>RocWeb</title>
+  <title>Radiation Oncology Centers PC</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
+<!-- Simple parallax effect for the title -->
+ <!-- SCROLLING NOT WORKING - CHANGE TO AFTER VIEW INIT -->
+  
+<script>
+  const title = document.getElementById('parallax-title');
+
+  window.addEventListener('scroll', function() {
+    let scrollPosition = window.pageYOffset;
+    // Adjust the speed factor here (lower = slower movement)
+    let slowScroll = scrollPosition * 0.6;
+    title.style.transform = 'translateY(' + slowScroll + 'px)';
+  });
+</script>
+
 <body>
   <app-root></app-root>
 </body>
+
+
 </html>
