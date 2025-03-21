@@ -30,7 +30,7 @@ export class AppComponent {
         if (title)
           title.style.transform = 'translateY(' + slowScroll + 'px)';
 
-        if (nav && scrollPosition > 10 ) {
+        if (nav && scrollPosition > 400 ) {
           nav.classList.add("solid");
          } else {
           nav?.classList.remove("solid")
